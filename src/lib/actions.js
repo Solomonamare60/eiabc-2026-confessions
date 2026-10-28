@@ -11,7 +11,7 @@ const MIN_TEXT = 4;
 const MAX_TITLE = 90;
 const MAX_AUTHOR = 40;
 const RATE_WINDOW_MIN = 10;
-const RATE_MAX = 5;
+const RATE_MAX = 20;
 
 function fail(message, field) {
   return { ok: false, message, field: field ?? null, id: null };

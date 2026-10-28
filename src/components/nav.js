@@ -23,14 +23,14 @@ export default function Nav() {
         <Link
           href="/"
           className="pointer-events-auto group flex items-center gap-2.5"
-          aria-label="Things I Never Said — home"
+          aria-label="EiABC Confessions 2026 — home"
         >
           <Sprig
             size={17}
             className="text-[var(--rose)] opacity-60 transition-opacity duration-500 group-hover:opacity-100"
           />
           <span className="display whitespace-nowrap text-[0.85rem] tracking-[0.01em] sm:text-[1.05rem]">
-            Things I Never Said
+            EiABC Confessions 2026
           </span>
         </Link>
 

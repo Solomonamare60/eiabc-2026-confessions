@@ -27,21 +27,21 @@ const caveat = Caveat({
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Things I Never Said",
-    template: "%s — Things I Never Said",
+    default: "EiABC Confessions 2026",
+    template: "%s — EiABC Confessions 2026",
   },
   description:
     "An anonymous wall for the words people never had the courage to say. Write one. Drag through thousands.",
   openGraph: {
-    title: "Things I Never Said",
+    title: "EiABC Confessions 2026",
     description:
       "An anonymous wall for the words people never had the courage to say.",
     type: "website",
-    siteName: "Things I Never Said",
+    siteName: "EiABC Confessions 2026",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Things I Never Said",
+    title: "EiABC Confessions 2026",
     description:
       "An anonymous wall for the words people never had the courage to say.",
   },

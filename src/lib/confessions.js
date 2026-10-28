@@ -93,6 +93,8 @@ export async function getConfession(id) {
 
 export async function insertConfession({ title, text, author, mood, ipHash }) {
   await ensureSchema();
+    // Keep the spam-check fingerprint only as long as the rate limit needs it.
+  await sql`UPDATE confessions SET ip_hash = NULL WHERE ip_hash IS NOT NULL AND "createdAt" < now() - INTERVAL '1 hour'`;
   const [row] = await sql`
     INSERT INTO confessions (title, text, author, mood, ip_hash, status)
     VALUES (${title}, ${text}, ${author}, ${mood}, ${ipHash}, 'pending')
